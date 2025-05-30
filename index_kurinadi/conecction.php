@@ -1,2 +1,3 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "html") or die("hatolik bor");
+$con = mysqli_connect("db", "root", "", "html") or die("hatolik bor");
+

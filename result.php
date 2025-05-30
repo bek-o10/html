@@ -1,6 +1,6 @@
 <?php
 require "headerForResult.php";
-$db = new PDO('mysql:host=localhost;dbname=html', 'root', '');
+$db = new PDO('mysql:host=db;dbname=html', 'root', '');
 $category = $_GET['category'] ?? '';
 $id = $_GET['id'] ?? 0;
 // Определяем таблицу по категории

@@ -1,53 +1,3 @@
-<style>
-    .products-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px; /* Отступ между товарами */
-    }
-    .catagary_section_2 {
-        flex: 1 1 30%; /* Хотя бы 30% ширины */
-        box-sizing: border-box; /* Учитывает отступы в ширине */
-        background: #fff; /* Белый фон для элементов */
-        border-radius: 8px; /* Закругленные углы */
-        padding: 15px; /* Отступы внутри контейнера */
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень вокруг элемента */
-        display: flex;
-        flex-direction: column; /* Располагаем содержимое вертикально */
-        align-items: center; /* Центруем содержимое по горизонтали */
-    }
-    .mobile_img img {
-        max-width: 100%; /* Изображение подстраивается под ширину контейнера */
-        border-radius: 5px; /* Закругление углов изображения */
-    }
-    .samsung_text {
-        font-size: 18px; /* Размер заголовка */
-        margin: 10px 0; /* Отступы сверху и снизу */
-    }
-    .rate_text,
-    .rate_text_1 {
-        font-size: 16px; /* Размер текста цены */
-        color: #888; /* Серый цвет для текста цены */
-    }
-    .button-container {
-        margin-top: 15px; /* Отступ для кнопок */
-    }
-    .btn {
-        padding: 10px 15px; /* Размеры кнопок */
-        color: white; /* Цвет шрифта */
-        border-radius: 5px; /* Закругленные углы кнопок */
-        text-decoration: none; /* Убираем подчеркивание */
-        border: none; /* Убираем границы */
-        cursor: pointer; /* Указатель при наведении */
-    }
-    .delete-btn {
-        background-color: #dc3545; /* Красный цвет для кнопки удаления */
-    }
-    .delete-btn:hover {
-        color: #dc3545;
-        background-color: #fff;
-        border: 1px solid #dc3545; /* Граница для hover эффекта */
-    }
-</style>
 <?php
 ob_start(); // Начинаем буферизацию вывода
 session_start();
@@ -57,7 +7,7 @@ if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = [];
 }
 // Подключение к базе данных
-$con = mysqli_connect("localhost", "root", "", "html") or die("Ошибка подключения к базе данных");
+$con = mysqli_connect("db", "root", "", "html") or die("Ошибка подключения к базе данных");
 // Проверяем, добавляется ли товар в корзину
 if (isset($_POST['add_to_cart'])) {
     $product_id = intval($_POST['product_id']);
@@ -136,3 +86,53 @@ ob_end_flush(); // Отправляем буферизированный выв�
 include 'index_kurinadi/footer.php'; // Подключаем футер
 include 'index_kurinadi/java.php'; // Подключаем футер
 ?>
+<style>
+    .products-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; /* Отступ между товарами */
+    }
+    .catagary_section_2 {
+        flex: 1 1 30%; /* Хотя бы 30% ширины */
+        box-sizing: border-box; /* Учитывает отступы в ширине */
+        background: #fff; /* Белый фон для элементов */
+        border-radius: 8px; /* Закругленные углы */
+        padding: 15px; /* Отступы внутри контейнера */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень вокруг элемента */
+        display: flex;
+        flex-direction: column; /* Располагаем содержимое вертикально */
+        align-items: center; /* Центруем содержимое по горизонтали */
+    }
+    .mobile_img img {
+        max-width: 100%; /* Изображение подстраивается под ширину контейнера */
+        border-radius: 5px; /* Закругление углов изображения */
+    }
+    .samsung_text {
+        font-size: 18px; /* Размер заголовка */
+        margin: 10px 0; /* Отступы сверху и снизу */
+    }
+    .rate_text,
+    .rate_text_1 {
+        font-size: 16px; /* Размер текста цены */
+        color: #888; /* Серый цвет для текста цены */
+    }
+    .button-container {
+        margin-top: 15px; /* Отступ для кнопок */
+    }
+    .btn {
+        padding: 10px 15px; /* Размеры кнопок */
+        color: white; /* Цвет шрифта */
+        border-radius: 5px; /* Закругленные углы кнопок */
+        text-decoration: none; /* Убираем подчеркивание */
+        border: none; /* Убираем границы */
+        cursor: pointer; /* Указатель при наведении */
+    }
+    .delete-btn {
+        background-color: #dc3545; /* Красный цвет для кнопки удаления */
+    }
+    .delete-btn:hover {
+        color: #dc3545;
+        background-color: #fff;
+        border: 1px solid #dc3545; /* Граница для hover эффекта */
+    }
+</style>

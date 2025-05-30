@@ -1,7 +1,7 @@
 <?php
 require 'index_kurinadi/header.php';
 require 'index_kurinadi/conecction.php'; // Подключаем базу данных
-$db = new PDO('mysql:host=localhost;dbname=html', 'root', ''); // Подключаем PDO
+$db = new PDO('mysql:host=db;dbname=html', 'root', ''); // Подключаем PDO
 // Определяем количество товаров на странице
 $limit = 6;
 // Получаем номер текущей страницы из URL, если он не установлен, то устанавливаем 1

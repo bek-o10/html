@@ -47,7 +47,7 @@ while ($row = mysqli_fetch_assoc($res)) {
                            </button>
 
                            <button type="button" class="btn btn-primary"
-                              onclick="window.location.href='/html/mobileWatch.php'">
+                              onclick="window.location.href='/mobileWatch.php'">
                               <?php echo htmlspecialchars($row['readMore']); ?>
                            </button>
                         </div>

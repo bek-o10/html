@@ -1,5 +1,5 @@
 <?php
-require 'conecction.php'; // Подключение к БД
+require 'conecction.php';// Подключение к БД
 $limit = 3;
 $res = mysqli_query($con, "SELECT * FROM mobile_kel LIMIT $limit");
 // Проверка на ошибки выполнения запроса
@@ -106,5 +106,5 @@ while ($row = mysqli_fetch_assoc($res)) {
 <?php
 // Закрытие соединения с базой данных
 mysqli_close($con);
-ob_end_flush(); // Отправляем буферизованный вывод
+
 ?>

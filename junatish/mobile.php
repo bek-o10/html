@@ -1,7 +1,6 @@
 <?php
 session_start(); // Запускаем сессию
-$con = mysqli_connect("localhost", "root", "", "html") or die("Ошибка подключения к базе данных");
-require_once 'adapter.php';
+require_once '../index_kurinadi/conecction.php';
 
 // Обработка добавления нового изображения
 if (isset($_POST['submit'])) {
@@ -123,6 +122,26 @@ $offset = ($page - 1) * $records_per_page;
 $query = "SELECT * FROM mobile_kel LIMIT $offset, $records_per_page";
 $res = mysqli_query($con, $query);
 ?>
+<a href="../index.php" class="alohida"><img src="../images/sala.png" class="ortaga">Главная страница</a><br><br>
+<a href="../admin.php" class="alohida"><img src="https://www.oxfordcc.co.uk/files/support.png" class="ortaga">Страница Админа</a>
+<style>
+    .alohida {
+            text-decoration: none;
+            color: #007BFF;
+            padding: 10px;
+        }
+        .alohida:hover {
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .ortaga{
+            width: 33px;
+            position: relative;
+            top: 13px;
+            right: 10px;
+        }
+</style>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -211,6 +230,7 @@ $res = mysqli_query($con, $query);
         echo '</ul>';
         echo '</nav>';
         ?>
+       
     </div>
 </body>
 

@@ -7,7 +7,7 @@
 if (isset($_GET['search'])) {
     $searchQuery = explode(' ', $_GET['search']); // Получаем поисковый запрос из URL и explode по пробелу
     // Подключение к базе данных
-    $conn = mysqli_connect("localhost", "root", "", "html");
+    $conn = mysqli_connect("db", "root", "", "html");
     // Проверка соединения
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);

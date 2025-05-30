@@ -41,12 +41,12 @@
             <a href="index.php">Home</a>
             <a href="computers.php">Computers</a>
             <a href="mobiles.php">Mobiles</a>
-            <a href="mobileWatch.php">Watchs</a>
+            <a href="mobileWatch.php">Special products</a>
             <a href="contact.php">Contact</a>
          </div>
          <span style="font-size:30px;cursor:pointer; color: #fff;" onclick="openNav()"><img
                src="images/toggle-icon.png"></span>
-         <a class="navbar-brand" href="index.php"><img src="/html/img/sala.png"
+         <a class="navbar-brand" href="index.php"><img src="images/sala.png"
                style="width: 50px;"></a>
          <form class="form-inline ">
             <div class="login_text">

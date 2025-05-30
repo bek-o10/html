@@ -1,6 +1,3 @@
-<div class="robotmanku">
-<a href="index.php" class="alohida"><img src="img/sala.png" class="ortaga" >Главная страница</a><br><br>
-</div>
 <?php 
 session_start();
 if (!isset($_SESSION['logged_in'])) {
@@ -8,6 +5,9 @@ if (!isset($_SESSION['logged_in'])) {
     exit();
 }
 ?>
+<div class="robotmanku">
+<a href="index.php" class="alohida"><img src="images/sala.png" class="ortaga" >Главная страница</a><br><br>
+</div>
 <!DOCTYPE html>
 <html lang="en">
 

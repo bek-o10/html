@@ -1,5 +1,5 @@
 <?php
-require 'conecction.php'; // Подключаем базу данных
+require 'conecction.php';// Подключаем базу данных
 
 // Определяем количество товаров на странице
 $limit = 3;
@@ -124,12 +124,11 @@ $total_pages = ceil($total_items / $limit);
                                 style="margin:0px 5px;"><?php echo htmlspecialchars($row['narx2']); ?>
                             </button>
                             <button type="button" class="btn btn-primary"
-                              onclick="window.location.href='/html/computers.php'">
+                              onclick="window.location.href='/computers.php'">
                               <?php echo htmlspecialchars($row['readMore']); ?>
                            </button>
                         </form>
                         <h4 class="computer_text"><?php echo htmlspecialchars($row['narx']); ?></h4>
-
                     </div>
                 <?php endforeach; ?>
             </div>

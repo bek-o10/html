@@ -1,7 +1,7 @@
 <div class="footer_section layout_padding margin_top_90">
          <div class="container">
             <div class="footer_logo_main">
-               <div class="footer_logo"><a href="index.php"><img src="img/sala.png" style="width:70px;"></a></div>
+               <div class="footer_logo"><a href="index.php"><img src="images/sala.png" style="width:70px;"></a></div>
                <div class="social_icon">
                   <ul>
                      <li><a href="#"><img src="images/fb-icon.png"></a></li>
@@ -22,11 +22,11 @@
                      <h4 class="adderss_text">Menu</h4>
                      <div class="footer_menu">
                         <ul>
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="computers.html">Computers</a></li>
-                           <li><a href="Mans_clothes.html">Mans Clothes</a></li>
-                           <li><a href="womans_clothes.html">Womans Clothes</a></li>
-                           <li><a href="contact.html">Contact Us</a></li>
+                           <li><a href="index.php">Home</a></li>
+                           <li><a href="computers.php">Computers</a></li>
+                           <li><a href="mobiles.php">Mobiles</a></li>
+                           <li><a href="mobileWatch.php">Special products</a></li>
+                           <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                      </div>
                   </div>
